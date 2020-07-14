@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+	* {
+    box-sizing: border-box;
+}
+
+	header h1
+	{
+		font-size: 30px;
+		color: dimgray;
+		font-family: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+		padding: 10px;
+		text-align: center;
+		background-color: lightgrey;
+	}
+	nav
+	{
+		font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+		font-size: 30px;
+		text-align: center;
+		padding-right: 50px;
+		background-clip: border-box;
+		background-color: transparent;
+	}
+	
+	a
+	{
+		color: white;
+		font-family: Constantia, Lucida Bright, DejaVu Serif, Georgia, serif;
+	}
+	aside
+	{
+		float: right;
+		width: 200px;
+		color: aqua;
+		font-size: 20px;
+		left: 0;
+		
+	}
+	
+	img
+	{
+		width: 130px;
+		height: 130px;
+	}
+	
+	marquee
+	{
+		font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+		color: darkorange;
+		font-size: 30px;
+		
+	}
+	
+	footer
+	{
+		color: goldenrod;
+		text-align: center;
+		padding-top: 20px;
+		background-color:dimgray ;
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+	}
+	
+	details
+	{
+		color: snow;
+		font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+		font-size:15px;
+	}
+	#one
+	{
+		color:yellow;
+		font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+		font-size: 20px;
+		width: 75%;
+		
+	}
+	#two
+	{
+		color:white;
+		font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+		font-size: 20px;
+		width: 75%;
+		
+	}
+	
+	</style>
+</head>
+
+<body style="background-image: url('/static/images/brick-wallpaper-2.jpg');">
+
+<header>
+	<h1>FARMER'S E-ASSISTENT</h1>
+</header>
+
+<!--
+<section>
+<article>
+	<aside>
+	<figure>
+  <img src="html designs/images/rvce_logo.jpg" alt="Trulli">
+  <figcaption>Fig.1 - RVCE</figcaption>
+</figure>
+
+<details>
+  <summary>Copyright 1999-2014.</summary>
+  <p> - by Refsnes Data. All Rights Reserved.</p>
+  <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+</details>
+	</aside>
+	</article>
+-->
+	
+		
+	<!--/section-->
+	<div id="myLinks">
+	<nav>
+		<a href="{{ url_for('home') }}">Home</a> </a>   |  
+		<a href="{{ url_for('about') }}">About     </a>   |  
+		<a href="{{ url_for('notification') }}">Discussion Board     </a> |
+		<a href="{{ url_for('complient') }}">Complaint        </a>|
+		<a href="{{ url_for('logout') }}">Logout </a>
+	</nav>
+	</div>
+	<img src="/static/images/former.png">
+	
+<!--section-->
+	<article>
+	<b><p id="one">About Farmer</p></b>
+		<p id="two">
+			<q>India is mainly an agricultural country. Agriculture is the backbone of our economy. The farmer is an important part of agriculture.
+			Agriculture depends on him. It is the toil of the farmer which brings prosperity in the country. His contribution is invaluable. He is an important member of our society. In other words, it is the land of farmers.</q><br><br>
+			<q>Farming and agriculture are the backbone of our society.</q><br><br>
+			<q>Without farmers, we wouldn’t have access to food and other basic necessities. Take a moment to really appreciate this profession and all the hard work and dedication the farm life requires.</q><br><br>
+			<q>As the population continues to grow, the workload of farmers also expands. The best quotes about farming and agriculture will make you respect the difficult labor that goes into every harvest.</q><br><br>
+			<q>Thanks to farmers, we can eat a wide range of fruits and vegetables all year round. The bountiful harvest of the farmlands sustains us all...</q><br>
+		</article>
+	
+
+<!--	</section>-->
+
+<!--
+<footer>
+<h3>Copyright rvce@edu.in</h3>
+	<h4> <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p></h4>
+</footer>
+-->
+
+<script>
+	function myFunction() {
+	  var x = document.getElementById("myLinks");
+	  if (x.style.display === "block") {
+		x.style.display = "none";
+	  } else {
+		x.style.display = "block";
+	  }
+	}
+	</script>
+
+</body>
+</html>

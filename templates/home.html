@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br><br><br>
+  <div class="jumbotron text-center">
+    <img src="/static/images/5.png" width="100px" height="100px">
+    <h1>Welcome To Farmer's E-Assistent</h1>
+    <p class="lead">This application provide suggestion for the problems faced by the farmers about the crop diseases </p>
+    {% if session.logged_in == NULL %}
+    <hr>
+    <p>Select an Account Type for Registration</p>
+      <!-- <a href="/former_register" class="btn btn-primary btn-lg">Farmer</a>
+      <a href="/expert_register" class="btn btn-success btn-lg">Expert</a> -->
+      <a href="/former_register"><img src="/static/images/former.png" width="150" height="150"></a>&nbsp;&nbsp;&nbsp;
+      <a href="/expert_register"><img src="/static/images/expert1-removebg-preview.png" width="120" height="120"></a>
+    {% endif %}
+  </div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br><br><br><br><br><br>
+<!-- <div class="jumbotron text-center"> -->
+  {% if session.logged_in == NULL %}
+    <!-- <a href="/register" class="btn btn-primary btn-lg">Register</a>
+    <a href="/login" class="btn btn-success btn-lg">Login</a> -->
+  {% endif %}
+<!-- </div> -->
+  <h1 style="color: white;">About Us</h1>
+  <p class="lead" style="color: white;">There are many plant related diseases which are increasing due to environmental changes, insects and
+    many more. Even farmers may not be have more knowledge or may not be aware of these type of disease and are
+    facing lot of problems in identifying and finding solution for those. This web application is designed to provide
+    immediate suggestions for these problems faced by the farmers. This application provides services to farmers by
+    giving possible remedies and guidance by the expertise.</p>
+  {% for img2 in image %}  
+      <h2>img2</h2>
+  {% endfor %}
+  {% endblock %}

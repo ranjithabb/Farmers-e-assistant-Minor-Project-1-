@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br><br><br>
+<!--<a href="/former_login" class="btn btn-primary btn-lg">Login</a></li>-->
+<img src="/static/images/former.png" width="200px" height="200px">
+  <h1 style="color: white;">Farmer Register</h1>
+  {% from "includes/_formhelpers.html" import render_field %}
+  <form method="POST" action="">
+    <div class="form-group" style="width: 500px;">
+      <h4 style="color: white;">Name</h4>{{render_field(form.name, class_="form-control")}}
+    </div>
+    <div class="form-group" style="width: 500px;">
+        <h4 style="color: white;">Phone No</h4>{{render_field(form.phno, class_="form-control")}}
+      </div>
+    <div class="form-group" style="width: 500px;">
+      <h4 style="color: white;">Email</h4>{{render_field(form.email, class_="form-control")}}
+    </div>
+    <div class="form-group" style="width: 500px;">
+      <h4 style="color: white;">Address</h4>{{render_field(form.address, class_="form-control")}}
+      </div>
+    <div class="form-group" style="width: 500px;">
+      <h4 style="color: white;">Username</h4>{{render_field(form.username, class_="form-control")}}
+    </div>
+    <div class="form-group" style="width: 500px;">
+      <h4 style="color: white;">Password</h4>{{render_field(form.password, class_="form-control")}}
+    </div>
+    <div class="form-group" style="width: 500px;">
+      <h4 style="color: white;">Confirm Password</h4>{{render_field(form.confirm, class_="form-control")}}
+    </div>
+    <p><input type="submit" class="btn btn-primary" value="Submit"></p>
+    <p> <h3 style="color: white;">Already Registered..?</h3><a href="/former_login" class="btn btn-primary">Login</a></p>
+  </form>
+{% endblock %}

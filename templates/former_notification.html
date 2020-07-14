@@ -1,0 +1,40 @@
+ {% extends 'layout.html' %}
+<link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+
+{% block body %}
+<br><br><br>
+<div class="container">
+<div class="row">
+<div class="col md-12">
+     <h2 style="color: white;">Expert List <!--<button type="button" class="btn btn-success  pull-right" data-toggle="modal" data-target="#myModal">Add Student Data</button>--></h2>
+          <table class="table table-hoverable">
+        <tr>
+              <th style="color: white;">Images</th>
+              <th style="color: white;">Description</th>
+              <!-- <th>Action</th> -->
+         </tr>  
+            <!-- <a href="/testing_img/{{pic}}"><img src='/static/images/upload/{{pic}}' width="400" height="200" name="img"/></a> -->
+          
+       {% for row in description %}
+       
+       
+                <tr>
+                    <!-- <td><img scr='{{row.test_img}}' alt="tested leaf" width="100" height="100"/></td> -->
+                    <td><img src='{{row.test_img}}' width="90" height="90" name="img"/></td>
+                    <td style="color: yellow;">{{row.descri}}</td>
+                    <td>
+               <!-- <a href="/update/{{row.email}}" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#modaledit{{row.email}}">Edit</a> -->
+              <!-- <a href="/delete_e/{{ row.email }}" class="btn btn-danger btn-xs" onclick="return confirm('Are You Sure For Delete?')">Delete</a> -->
+                  </td>
+                </tr>
+                
+                {% endfor %}
+                
+                </table>  
+                </div>
+               </div>
+               </div>
+               {% endblock %}
+        
+
+ 

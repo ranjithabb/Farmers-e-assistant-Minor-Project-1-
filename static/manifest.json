@@ -1,0 +1,31 @@
+{
+    "name": "Former's E-Assistent",
+    "short_name": "FEA",
+    "theme_color": "#CBD394",
+    "background_color": "#F1F7C6",
+    "icons": [
+      {
+          "src": "/static/images/icon64.png",
+          "type": "image/png",
+          "sizes": "64x64"
+        },
+        {
+          "src": "/static/images/icon96.png",
+          "type": "image/png",
+          "sizes": "96x96"
+        },
+        {
+          "src": "/static/images/icon192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        },
+        {
+          "src": "/static/images/icon512.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+    ],
+    "start_url": "/templates",
+    "display": "standalone",
+    "orientation": "portrait"
+  }

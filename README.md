@@ -1,4 +1,4 @@
-# Minor-Project-1
+# Farmers' E - Assistant
 Farmers' e-assistant : A web application to detect leaf diseases in plant
 
 The application was built using Flask 1.1- python web framework. It takes image of infected leaf of banana plant captured in natural environment as input and does the classification and displays the results back to the user.
